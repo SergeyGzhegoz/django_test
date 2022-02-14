@@ -1,0 +1,60 @@
+body{
+    background: #dcd0ff;
+}
+
+aside {
+    float: left;
+    background: #906bff;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid #4d4d4d;
+    margin-right: 20px;
+}
+
+aside img{
+    width: 80px;
+    float: left;
+}
+
+aside .logo{
+    font-size: 28px;
+    margin-left: 5px;
+    font-weight: bold;
+    position: relative;
+    top: -5px;
+}
+
+aside h3{
+    margin-top: 50px;
+    font-size: 28px;
+}
+
+aside ul{
+    list-style: none;
+}
+
+aside ul li{
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+    transition: transform .6s ease;
+}
+
+aside ul li:hover, aside ul a:hover{
+    color: #eb5555;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+main .features{
+    float: left;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+    color: #181624;
+}
+
+main .features h1 {font-size: 50px;}
+main .features p {max-width: 400px; margin: 20px auto;}
