@@ -7,13 +7,17 @@
 {% block content %}
 <div class="features">
     <h1>Новости на сайте</h1>
-    <p>Nobis voluptatibus eius consequatur voluptatem in voluptates a. Est a deserunt commodi possimus odit. Quae vel et
-    enim eum ad voluptatum omnis. Aut deleniti placeat neque qui. Ut veritatis repellendus.</p>
-    <button class="btn btn-warning">На страницу про нас</button>
-    {% for el in values %}
-    {%  if el == 'Hello' %}
-        <p>{{ el | upper}}</p>
-    {% endif %}
+    {% if news %}
+    {% for el in news %}
+        <div class="alert alert-warning">
+            <h3>{{ el.title }}</h3>
+            <p>{{ el.anons }}</p>
+        </div>
     {% endfor %}
+    {% else %}
+        <p>У вас нет записей</p>
+    {% endif %}
+
+    {# Комментарий #}
 </div>
 {% endblock %}
