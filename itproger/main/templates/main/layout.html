@@ -10,6 +10,7 @@
           href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
           integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
     <title>{% block title %}{% endblock %}</title>
+    <script src="https://use.fontawesome.com/611f1fa8f8.js"></script>
 </head>
 <body>
 <aside>
@@ -18,16 +19,21 @@
     <h3>Навигация</h3>
     <ul>
         <a href="{% url 'home' %}">
-            <li><i class="fa-solid fa-house"></i>Главная</li>
+            <li><i class="fa fa-home" aria-hidden="true"></i> Главная</li>
         </a>
         <a href="{% url 'about' %}">
-            <li><i class="fa-solid fa-user-group"></i>Про нас</li>
+            <li><i class="fa fa-users" aria-hidden="true"></i> Про нас</li>
         </a>
         <a href="{% url 'news_home' %}">
-            <li><i class="fa-solid fa-user-group"></i>Новости</li>
+            <li><i class="fa fa-newspaper-o" aria-hidden="true"></i> Новости</li>
         </a>
         <a href="{% url 'contacts' %}">
-            <li><i class="fa-solid fa-map-location"></i>Контакты</li>
+            <li><i class="fa fa-telegram" aria-hidden="true"></i> Контакты</li>
+        </a>
+        <a href="{% url 'create' %}">
+            <li>
+                <button class="btn btn-info"><i class="fa fa-plus-circle" aria-hidden="true"></i> Добавить запись</button>
+            </li>
         </a>
     </ul>
 </aside>
