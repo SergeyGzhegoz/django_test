@@ -35,6 +35,10 @@ aside ul{
     list-style: none;
 }
 
+aside ul a{
+    text-decoration: none;
+}
+
 aside ul li{
     color: #fff;
     display: block;
